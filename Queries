@@ -7,7 +7,7 @@ SELECT zip_code, product_name FROM consumer.consumer_complaints
 WHERE state_name = 'VA';
 
 Find the products and zip codes and sub products for the state of California (CA)
-SELECT zip_code, sub_product FROM consumer.consumer_complaints
+SELECT product_name, zip_code, sub_product FROM consumer.consumer_complaints
 WHERE state_name = 'CA';
 
 Find all the Billing statement issues and order by ZIP code from lowest to highest
