@@ -24,7 +24,7 @@ SELECT company FROM consumer.consumer_complaints
 WHERE company LIKE '%Bank%';
 
 Find all companies who have US in the name
-SELECT * FROM consumer.consumer_complaints
+SELECT DISTINCT company FROM consumer.consumer_complaints
 WHERE company LIKE '%US%';
 
 Find the number of complaints that are about a mortgage product.
