@@ -20,7 +20,7 @@ SELECT * FROM consumer.consumer_complaints
 WHERE tags LIKE '%Servicemember%';
 
 Find any company which has Bank in the name.
-SELECT * FROM consumer.consumer_complaints
+SELECT company FROM consumer.consumer_complaints
 WHERE company LIKE '%Bank%';
 
 Find all companies who have US in the name
