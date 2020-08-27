@@ -12,12 +12,12 @@ WHERE state_name = 'CA';
 
 Find all the Billing statement issues and order by ZIP code from lowest to highest
 SELECT * FROM consumer.consumer_complaints
-WHERE issue LIKE 'Billing%'
+WHERE issue LIKE '%Billing%'
 OR issue LIKE '%billing%' ORDER BY zip_code ASC;
 
 Find all complaint from customers who are classified as Servicemember.
 SELECT * FROM consumer.consumer_complaints
-WHERE tags = 'Servicemember';
+WHERE tags LIKE '%Servicemember%';
 
 Find any company which has Bank in the name.
 SELECT * FROM consumer.consumer_complaints
